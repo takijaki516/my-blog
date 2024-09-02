@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
+import { Navbar } from "@/components/navbar";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
 
 export const metadata: Metadata = {
   title: "My Blog",
@@ -17,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn("min-h-screen bg-background antialiased flex flex-col")}
+        className={cn("flex min-h-screen flex-col bg-background antialiased")}
       >
         <ThemeProvider
           attribute="class"
@@ -25,7 +27,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           {children}
+          <TailwindIndicator />
         </ThemeProvider>
       </body>
     </html>
