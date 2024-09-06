@@ -11,7 +11,6 @@ export default function WelcomePage() {
 
   return (
     <main className={styles["gradient-bg"]}>
-      
       <svg xmlns="http://www.w3.org/2000/svg">
         <defs>
           <filter id="goo">
@@ -50,17 +49,6 @@ export default function WelcomePage() {
           }}
         />
       </div>
-      {/* NOTE: gradients end! */}
-
-      <header className={styles.header}>
-        <Link href="/profile" className={styles.text}>
-          Profile
-        </Link>
-
-        <Link href="/projects" className={styles.text}>
-          Projects
-        </Link>
-      </header>
 
       <div className={styles.content}>
         <h1 className={styles["title"]}>Welcome to My Blog</h1>
