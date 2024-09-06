@@ -118,7 +118,7 @@ export function Particles() {
   return (
     <canvas
       ref={canvasRef}
-      className="pointer-events-none absolute top-0 h-dvh w-full"
+      className="pointer-events-none absolute top-0 h-[calc(100vh-300px)] w-full"
     />
   );
 }
