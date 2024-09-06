@@ -72,6 +72,63 @@ const config: Config = {
           "5": "hsl(var(--chart-5))",
         },
       },
+      keyframes: {
+        "move-border": {
+          "100%": { "offset-distance": "100%" },
+        },
+        loadrot: {
+          "0%": {
+            rotate: "0deg",
+            scale: "0",
+          },
+          "100%": {
+            scale: "1",
+          },
+        },
+        spotlight: {
+          "0%": {
+            transform: "rotateZ(0deg) scale(1)",
+            filter: "blur(15px) opacity(0.5)",
+          },
+          "20%": {
+            transform: "rotateZ(-1deg) scale(1.2)",
+            filter: "blur(16px) opacity(0.6)",
+          },
+          "40%": {
+            transform: "rotateZ(2deg) scale(1.3)",
+            filter: "blur(14px) opacity(0.4)",
+          },
+          "60%": {
+            transform: "rotateZ(-2deg) scale(1.2)",
+            filter: "blur(15px) opacity(0.6)",
+          },
+          "80%": {
+            transform: "rotateZ(1deg) scale(1.1)",
+            filter: "blur(13px) opacity(0.4)",
+          },
+          "100%": {
+            transform: "rotateZ(0deg) scale(1)",
+            filter: "blur(15px) opacity(0.5)",
+          },
+        },
+        "text-fade": {
+          "100%": {
+            color: "hsl(var(--foreground))",
+          },
+        },
+        shimmer: {
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shimmer-width)) 0",
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shimmer-width)) 0",
+          },
+        },
+      },
+      animation: {
+        "text-fade": "text-fade 2s linear forwards",
+        shimmer: "shimmer 7s infinite",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

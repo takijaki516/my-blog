@@ -1,12 +1,8 @@
 .gradient-bg {
-  --color-bg1: #080b12;
-  --color-bg2: #282840;
-
   --color1: 98, 78, 154;
   --color2: 72, 85, 99;
   --color3: 75, 108, 183;
   --color4: 50, 160, 220;
-
   --color-interactive: 140, 100, 255;
   --circle-size: 80%;
   --blending: hard-light;
@@ -17,7 +13,7 @@
   position: relative;
   overflow: hidden;
 
-  background: linear-gradient(45deg, var(--color-bg1), var(--color-bg2));
+  background: linear-gradient(180deg, hsl(var(--background)), hsl(var(--card)));
 
   svg {
     display: none;
@@ -170,10 +166,8 @@
 }
 
 .header {
-  --header-bg: #121521;
-  --header-text: #9dc3f7;
-  --header-border: #c2ccff63;
-  --header-border-accent: #c2ccff9f;
+  --border: #abb3d396;
+  --border-accent: #abb3d3;
 
   position: absolute;
   z-index: 0;
@@ -189,8 +183,6 @@
   justify-content: space-evenly;
 
   border-radius: 50px;
-  background: var(--header-bg);
-  color: var(--header-text);
 
   overflow: hidden;
 
@@ -202,14 +194,14 @@
     width: 600%;
     height: 600%;
 
-    background-color: var(--header-border);
+    background-color: var(--border);
 
     background-image: repeating-conic-gradient(
-      var(--header-border-accent) 0%,
-      var(--header-border-accent) 5%,
+      var(--border-accent) 0%,
+      var(--border-accent) 5%,
       transparent 25%,
       transparent 40%,
-      var(--header-border-accent) 50%
+      var(--border-accent) 50%
     );
 
     animation: spin 10s linear infinite;
@@ -223,7 +215,7 @@
     inset: 1px;
 
     border-radius: 50px;
-    background: var(--header-bg);
+    background: hsl(var(--card));
   }
 
   @keyframes spin {
@@ -237,12 +229,13 @@
 
   .text {
     transition: 0.5s ease;
-    opacity: 0.6;
+    opacity: 0.5;
+    font-size: 1.2rem;
+    color:hsl(var(--accent-foreground));
   }
 
   .text:hover {
-    color: var(--header-text-accent);
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 

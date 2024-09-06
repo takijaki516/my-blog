@@ -7,5 +7,9 @@ type SkillBadge = {
 };
 
 export function SkillBadge({ children, className }: SkillBadge) {
-  return <Badge className={cn("relative p-1", className)}>{children}</Badge>;
+  return (
+    <Badge variant={"secondary"} className={cn("py-2 px-4", className)}>
+      {children}
+    </Badge>
+  );
 }
