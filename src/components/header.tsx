@@ -12,14 +12,14 @@ export function Header() {
       )}
     >
       <Link
-        href="/profile"
+        href=""
         className="relative z-10 bg-[linear-gradient(0deg,#d8ecf8,#98c0ef)] bg-clip-text text-transparent"
       >
         Profile
       </Link>
 
       <Link
-        href="/profile"
+        href=""
         className="relative z-10 bg-[linear-gradient(0deg,#d8ecf8,#98c0ef)] bg-clip-text text-transparent"
       >
         Projects

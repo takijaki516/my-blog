@@ -11,7 +11,7 @@ export default function Profile() {
         </Card>
 
         <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3">
             <div className="text-lg font-semibold">languages</div>
 
             <div className="flex flex-wrap gap-2">
@@ -47,7 +47,7 @@ export default function Profile() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3">
             <div className="text-lg font-semibold">frameworks</div>
 
             <div className="flex gap-2">

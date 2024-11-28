@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
 
-import * as React from "react";
-import "../globals.css";
+import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
 
 export const metadata: Metadata = {
-  title: "Welcome to My Blog",
-  description: "Welcome page of my blog",
+  title: "My Blog",
+  description: "My Blog",
 };
 
-export default function WelcomeLayout({
+export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn("flex min-h-screen flex-col bg-background antialiased")}
       >
@@ -27,6 +27,7 @@ export default function WelcomeLayout({
           disableTransitionOnChange
         >
           {children}
+          <TailwindIndicator />
         </ThemeProvider>
       </body>
     </html>
