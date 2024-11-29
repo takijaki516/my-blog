@@ -8,22 +8,14 @@ export function Header() {
       className={cn(
         "sticky top-10 z-20 flex w-full max-w-fit items-center justify-center gap-6 rounded-full border border-border bg-card px-8 py-4 transition-all duration-300",
         "before:absolute before:inset-0 before:rounded-full before:bg-[radial-gradient(farthest-side_at_50%_100%,hsl(var(--primary)),transparent)] before:opacity-10 before:transition-all before:duration-300 before:ease-in-out before:content-['']",
-        "hover:before:bg-[radial-gradient(farthest-side_at_50%_100%,hsl(var(--primary)),transparent)] hover:before:opacity-30",
+        "hover:before:bg-[radial-gradient(farthest-side_at_50%_100%,hsl(var(--primary)),transparent)] hover:before:opacity-20",
       )}
     >
-      <Link
-        href=""
-        className="relative z-10 bg-[linear-gradient(0deg,#d8ecf8,#98c0ef)] bg-clip-text text-transparent"
-      >
-        Profile
-      </Link>
+      <NavLink href="#profile">Profile</NavLink>
 
-      <Link
-        href=""
-        className="relative z-10 bg-[linear-gradient(0deg,#d8ecf8,#98c0ef)] bg-clip-text text-transparent"
-      >
-        Projects
-      </Link>
+      <NavLink href="#projects">Projects</NavLink>
+
+      <NavLink href="#contacts">Contacts</NavLink>
 
       <span className="mask-button absolute inset-[-1px] rounded-full">
         <GlowBorder className="animate-[move-border_var(--loop-cycle)_linear_infinite]" />
@@ -43,5 +35,19 @@ function GlowBorder({ className }: { className: string }) {
         className,
       )}
     />
+  );
+}
+
+function NavLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <Link href={href} className="relative z-10 text-foreground/80 hover:text-foreground">
+      {children}
+    </Link>
   );
 }

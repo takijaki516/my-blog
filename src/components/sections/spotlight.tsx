@@ -5,8 +5,7 @@ export function SpotLight() {
     <section className="relative mt-10 w-full">
       <div
         className={cn(
-          "absolute left-1/2 top-1/2 h-[28px] w-[28px] -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-black shadow-[0_0_16px_0_#98c0ef] transition-shadow duration-1000 ease-in-out",
-          "hover:animate-colorize hover:shadow-[-2px_2px_16px_0_#d8bd10]",
+          "absolute left-1/2 top-1/2 h-[28px] w-[28px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-black shadow-[0_0_16px_0_#98c0ef]",
         )}
       />
 

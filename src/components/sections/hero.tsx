@@ -6,13 +6,13 @@ export function Hero() {
     <section className="relative mt-60 flex h-[600px] w-full flex-col items-center overflow-hidden">
       <h1
         aria-hidden="true"
-        className="animate-text-fade absolute max-w-80 text-center text-6xl font-bold text-transparent"
+        className="absolute max-w-80 animate-text-fade text-center text-6xl font-bold text-transparent"
       >
-        FRONTEND DEVELOPER
+        WELCOME TO MY BLOG
       </h1>
 
       <AnimatedShinyText className="relative max-w-80 text-center text-6xl font-bold">
-        FRONTEND DEVELOPER
+        WELCOME TO MY BLOG
       </AnimatedShinyText>
 
       <div
