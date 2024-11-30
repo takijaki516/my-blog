@@ -23,11 +23,10 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
           disableTransitionOnChange
         >
           {children}
-          <TailwindIndicator />
+          {process.env.NODE_ENV === "development" && <TailwindIndicator />}
         </ThemeProvider>
       </body>
     </html>

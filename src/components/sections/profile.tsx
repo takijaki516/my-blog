@@ -28,7 +28,7 @@ export default function Profile() {
               <div className="flex flex-wrap gap-2">
                 <Skill name="JavaScript" level="strong" />
                 <Skill name="TypeScript" level="strong" />
-                <Skill name="Python" level="intermediate" />
+                <Skill name="Python" level="weak" />
               </div>
             </div>
 

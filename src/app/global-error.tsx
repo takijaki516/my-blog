@@ -29,7 +29,6 @@ export default function GlobalError({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
           disableTransitionOnChange
         >
           <div className="flex h-screen w-full flex-col items-center justify-center bg-background">

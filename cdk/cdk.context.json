@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=767397928878:domainName=taekgogo.com:region=ap-northeast-2": {
+    "Id": "/hostedzone/Z04487994RXAWDH28LJU",
+    "Name": "taekgogo.com."
+  },
+  "hosted-zone:account=767397928878:domainName=taekgogo.com:region=us-east-1": {
+    "Id": "/hostedzone/Z04487994RXAWDH28LJU",
+    "Name": "taekgogo.com."
+  }
+}
