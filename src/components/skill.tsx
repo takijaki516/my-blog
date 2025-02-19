@@ -13,7 +13,8 @@ interface SkillProps {
     | "react"
     | "Python"
     | "tailwindcss"
-    | "TypeScript";
+    | "TypeScript"
+    | "cloudflare";
   level: "strong" | "intermediate" | "weak";
 }
 
@@ -24,7 +25,7 @@ export function Skill({ name, level }: SkillProps) {
     <Tooltip>
       <TooltipTrigger>
         <Badge
-          className="flex h-fit items-center gap-1 text-sm"
+          className="flex h-fit cursor-default items-center gap-1 text-sm"
           variant={"secondary"}
         >
           <img
@@ -34,7 +35,7 @@ export function Skill({ name, level }: SkillProps) {
           {name}
         </Badge>
       </TooltipTrigger>
-      <TooltipContent>{level}</TooltipContent>
+      <TooltipContent className="font-semibold">{level}</TooltipContent>
     </Tooltip>
   );
 }

@@ -10,7 +10,7 @@ export default function Profile() {
     >
       <h2 className="pb-4 text-3xl font-bold">Profile</h2>
       <div className="grid gap-20 md:grid-cols-2">
-        <Card className="border-border/50 text-foreground/80 transition-colors duration-500 ease-in-out hover:text-foreground">
+        <Card className="border-border/50 font-semibold text-foreground/80 transition-colors duration-500 ease-in-out hover:text-foreground">
           <CardContent className="p-6">
             새로운 도전을 두려워하지 않고, 지속적인 성장을 추구하는
             개발자입니다.
@@ -28,7 +28,7 @@ export default function Profile() {
               <div className="flex flex-wrap gap-2">
                 <Skill name="JavaScript" level="strong" />
                 <Skill name="TypeScript" level="strong" />
-                <Skill name="Python" level="weak" />
+                <Skill name="Python" level="intermediate" />
               </div>
             </div>
 
@@ -39,9 +39,10 @@ export default function Profile() {
                 <Skill name="Next.js" level="strong" />
                 <Skill name="tailwindcss" level="strong" />
                 <Skill name="PostgreSQL" level="intermediate" />
-                <Skill name="aws" level="intermediate" />
                 <Skill name="docker" level="intermediate" />
                 <Skill name="NestJS" level="weak" />
+                <Skill name="aws" level="intermediate" />
+                <Skill name="cloudflare" level="intermediate" />
               </div>
             </div>
           </div>
