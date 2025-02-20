@@ -24,18 +24,19 @@ export function Contacts() {
     <section id="contacts" className="container mt-28 w-full">
       <h2 className="pb-4 text-3xl font-bold">Contacts</h2>
       <Card className="border-border/50">
-        <CardContent className="grid gap-4 p-6">
+        <CardContent className="grid gap-4 overflow-x-auto p-6">
           <div className="grid gap-6">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-1">
               <a
                 href={`mailto:${EMAIL}`}
-                className="flex items-center gap-4 text-foreground/80 transition-colors hover:text-foreground"
+                className="flex items-center gap-2 text-foreground/80 transition-colors hover:text-foreground"
               >
                 <div className="rounded-lg bg-muted p-2">
                   <Mail className="h-5 w-5" />
                 </div>
                 <span className="text-lg">{EMAIL}</span>
               </a>
+
               <Button
                 variant="ghost"
                 size="icon"
@@ -59,12 +60,13 @@ export function Contacts() {
               href={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 text-foreground/80 transition-colors hover:text-foreground"
+              className="flex items-center gap-2 text-foreground/80 transition-colors hover:text-foreground"
             >
-              <div className="rounded-lg bg-muted p-2">
-                <img src="/github-mark.svg" className="h-5 w-5" />
+              <div className="flex-shrink-0 rounded-lg bg-muted p-2">
+                <img src="/github-mark.svg" className="size-5" />
               </div>
-              <span className="text-lg">{GITHUB_URL}</span>
+
+              <span className="text-ellipsis text-lg">{GITHUB_URL}</span>
             </a>
           </div>
         </CardContent>
